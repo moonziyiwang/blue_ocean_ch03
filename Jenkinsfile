@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'nikhilpathania/jenkins_ssh_agent'
-    }
-
-  }
+  agent none
   stages {
     stage('Build & Test') {
       agent {
